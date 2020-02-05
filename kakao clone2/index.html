@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Box Model</title>
+    <style>
+      .fbox {
+        display: flex;
+        justify-content: space-around;
+      }
+      .fbox:hover {
+        background-color: pink;
+        animation: 2s myan1 ease-in-out;
+      }
+      .box {
+        background-color: yellow;
+        width: 200px;
+        height: 200px;
+        padding: 20px 10px 5px 2px;
+        border: 2px solid black;
+        animation: 2s myan1 ease-in-out;
+      }
+      .box:nth-child(2):active {
+        background-color: blue;
+      }
+      @keyframes myan1 {
+        from {
+          transfrom: none;
+        }
+        to {
+          transform: rotate(1turn) scale(0.5, 0.5);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fbox">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box">
+        <input type="password" />
+        <input type="submit" />
+      </div>
+    </div>
+  </body>
+</html>
