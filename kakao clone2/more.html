@@ -25,7 +25,7 @@
     </div>
     <header class="head1">
       <div class="head1__col">
-        <h1 class="Chat__title">Chats</h1>
+        <span class="head1__col__name">Finds</span>
       </div>
       <div class="head1__col">
         <span class="head1__col__icon">
@@ -40,17 +40,47 @@
       </div>
     </header>
     <main>
-      <ul class="Chats list">
-        <li class="Chats__chats">
-          <div class="Chats__chats__colum">
-            <div class="Chats__content">
-              <img src="avartar.png" class="user-g-avartar" />
-              <span class="username">Kang</span>
-              <span class="pre">Hi</span>
+      <header class="find__header">
+        <ul class="find_header_top">
+          <li class="find_header_list">
+            <span class="imgtitle">
+              <i class="fas fa-qrcode fa-2x"></i>
+            </span>
+            <span class="text">QRcode</span>
+          </li>
+          <li class="find_header_list">
+            <span class="imgtitle">
+              <i class="far fa-id-badge"></i>
+            </span>
+            <span class="text">Add by Contact</span>
+          </li>
+          <li class="find_header_list">
+            <span class="imgtitle">
+              <i class="far fa-id-card"></i>
+            </span>
+            <span class="text">Add by Id</span>
+          </li>
+          <li class="find_header_list">
+            <span class="imgtitle">
+              <i class="fas fa-envelope-square"></i>
+            </span>
+            <span class="text">invite</span>
+          </li>
+        </ul>
+      </header>
+      <ul class="recommend_list">
+        <h5 class="recommend_list">Recommend</h5>
+        <li class="find_recommend">
+          <div class="recommend__profile">
+            <div class="recommend__colum">
+              <img src="avartar.png" class="g-avartar" />
+              <div class="recommend_content">
+                <span class="username">Kangyun</span>
+              </div>
             </div>
-          </div>
-          <div class="Chats__chats__colum">
-            <span class="chats__chats__timestamp">11:50</span>
+            <div class="recommend__colum">
+              <i class="far fa-plus-square"></i>
+            </div>
           </div>
         </li>
       </ul>
@@ -63,7 +93,7 @@
           </a>
         </li>
         <li class="nav_link_item">
-          <a href="chat.html" class="nav_link_list">
+          <a href="index.html" class="nav_link_list">
             <i class="fas fa-comments"></i>
           </a>
         </li>

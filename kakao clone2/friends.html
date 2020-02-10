@@ -8,7 +8,7 @@
       src="https://kit.fontawesome.com/09983b9b99.js"
       crossorigin="anonymous"
     ></script>
-    <title>Chats | Kakao Clone</title>
+    <title>Friends | Kakao Clone</title>
   </head>
   <body>
     <div class="status bar">
@@ -25,7 +25,7 @@
     </div>
     <header class="head1">
       <div class="head1__col">
-        <h1 class="Chat__title">Chats</h1>
+        <span class="head1__col__name">Chats</span>
       </div>
       <div class="head1__col">
         <span class="head1__col__icon">
@@ -40,17 +40,38 @@
       </div>
     </header>
     <main>
-      <ul class="Chats list">
-        <li class="Chats__chats">
-          <div class="Chats__chats__colum">
-            <div class="Chats__content">
-              <img src="avartar.png" class="user-g-avartar" />
-              <span class="username">Kang</span>
-              <span class="pre">Hi</span>
+      <header class="friends__header">
+        <div class="Friends__f__my">
+          <div class="Firends__f__colum">
+            <image class="g-avartar" src="avartar.png" />
+            <span class="username">Kang</span>
+            <span class="pre">My</span>
+          </div>
+          <div class="Firends__f__colum">
+            <span class="prof">Life</span>
+          </div>
+        </div>
+      </header>
+      <div class="friends__plus">
+        <h5 class="friends__title">Plus friends</h5>
+        <div class="Friends__f__plus">
+          <div class="Firends__f__colum">
+            <image class="g-avartar" src="avartar.png" />
+            <span class="username">Plus friends</span>
+          </div>
+        </div>
+      </div>
+      <ul class="Friends">
+        <h5 class="friends__title">Friends 14</h5>
+        <li class="friends__list">
+          <div class="Friends__f__plus">
+            <div class="Firends__f__colum">
+              <image class="g-avartar" src="avartar.png" />
+              <span class="username">Yun</span>
             </div>
           </div>
-          <div class="Chats__chats__colum">
-            <span class="chats__chats__timestamp">11:50</span>
+          <div class="friends__colum">
+            <span>FTIsland</span>
           </div>
         </li>
       </ul>
@@ -63,7 +84,7 @@
           </a>
         </li>
         <li class="nav_link_item">
-          <a href="chat.html" class="nav_link_list">
+          <a href="index.html" class="nav_link_list">
             <i class="fas fa-comments"></i>
           </a>
         </li>
