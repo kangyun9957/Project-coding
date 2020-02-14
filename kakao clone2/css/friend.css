@@ -1,0 +1,33 @@
+.friend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.friend .friend_avartar {
+  margin-right: 15px;
+  width: 80px;
+  border-radius: 35%;
+}
+.friend .friend__f__colum {
+  display: flex;
+  align-items: center;
+}
+.friend__f__content .username {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.friend__f__content .preview-b,
+.friend .timestamp,
+.friend .preview,
+.friend .prof,
+.friend .pre {
+  opacity: 0.6;
+  font-size: 14px;
+}
+.friends__list .friends__colum {
+  border: 1px solid #5aad77;
+  padding: 5px 10px;
+  border-radius: 14px;
+  font-size: 13px;
+}

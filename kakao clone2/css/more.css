@@ -1,0 +1,35 @@
+.finds .find_header_top {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+.finds .find_header_list {
+  padding: 0px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.finds .text {
+  margin-top: 10px;
+  font-size: 14px;
+}
+.finds .recommend_list {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #f7f7f7;
+}
+.finds .recommend_lists {
+  opacity: 0.7;
+  margin-bottom: 8px;
+}
+.finds .recommend__colum {
+  display: flex;
+  align-items: center;
+}
+.recommend__colum .g-avartar {
+  margin-right: 20px;
+}
+.finds .recommend__profile {
+  display: flex;
+  justify-content: space-between;
+}

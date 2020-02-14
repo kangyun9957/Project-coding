@@ -8,10 +8,11 @@
       src="https://kit.fontawesome.com/09983b9b99.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Friends | Kakao Clone</title>
   </head>
   <body>
-    <div class="status bar">
+    <div class="status-bar">
       <div class="status bar__column">
         <span class="stauts bar__clock">13:54</span>
       </div>
@@ -23,9 +24,9 @@
         <i class="fas fa-battery-three-quarters"></i>
       </div>
     </div>
-    <header class="head1">
+    <header class="header">
       <div class="head1__col">
-        <span class="head1__col__name">Chats</span>
+        <h1 class="Chat__title">Friends</h1>
       </div>
       <div class="head1__col">
         <span class="head1__col__icon">
@@ -39,35 +40,42 @@
         </span>
       </div>
     </header>
-    <main>
+    <main class="friends">
       <header class="friends__header">
-        <div class="Friends__f__my">
-          <div class="Firends__f__colum">
-            <image class="g-avartar" src="avartar.png" />
-            <span class="username">Kang</span>
-            <span class="pre">My</span>
+        <div class="Friends__f__my friend">
+          <div class="friend__f__colum">
+            <image class="g-avartar friend_avartar" src="avartar.png" />
+            <div class="friend__f__content">
+              <span class="username">Kang</span>
+              <span class="pre">My</span>
+            </div>
           </div>
-          <div class="Firends__f__colum">
+          <div class="friend__f__colum">
             <span class="prof">Life</span>
           </div>
         </div>
       </header>
-      <div class="friends__plus">
+      <div class="friends__plus ">
         <h5 class="friends__title">Plus friends</h5>
-        <div class="Friends__f__plus">
-          <div class="Firends__f__colum">
-            <image class="g-avartar" src="avartar.png" />
-            <span class="username">Plus friends</span>
+        <div class="Friends__f__plus friend">
+          <div class="friend__f__colum">
+            <image class="g-avartar friend_avartar" src="avartar.png" />
+            <div class="friend__f__content">
+              <span class="username">Plus friends</span>
+            </div>
           </div>
         </div>
       </div>
-      <ul class="Friends">
+      <ul class="friends__list">
         <h5 class="friends__title">Friends 14</h5>
-        <li class="friends__list">
-          <div class="Friends__f__plus">
-            <div class="Firends__f__colum">
-              <image class="g-avartar" src="avartar.png" />
-              <span class="username">Yun</span>
+        <li class="friend__list friend ">
+          <div class="friend__f__plus ">
+            <div class="friend__f__colum">
+              <image class="g-avartar friend_avartar" src="avartar.png" />
+              <div class="friend__f__content">
+                <span class="username">Yun</span>
+                <span class="preview">hi</span>
+              </div>
             </div>
           </div>
           <div class="friends__colum">

@@ -8,68 +8,74 @@
       src="https://kit.fontawesome.com/09983b9b99.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Friends | Kakao Clone</title>
   </head>
-  <body>
-    <div class="status bar">
-      <div class="status bar__column">
-        <span class="stauts bar__clock">13:54</span>
+  <body class="chatsbody">
+    <div class="head_wrapper">
+      <div class="status-bar">
+        <div class="status bar__column">
+          <span class="stauts bar__clock">13:54</span>
+        </div>
+        <div class="status bar__column">
+          <i class="far fa-clock"></i>
+          <i class="fas fa-volume-up"></i>
+          <i class="fas fa-wifi"></i>
+          <span class="status bar__battery-level">100%</span>
+          <i class="fas fa-battery-three-quarters"></i>
+        </div>
       </div>
-      <div class="status bar__column">
-        <i class="far fa-clock"></i>
-        <i class="fas fa-volume-up"></i>
-        <i class="fas fa-wifi"></i>
-        <span class="status bar__battery-level">100%</span>
-        <i class="fas fa-battery-three-quarters"></i>
-      </div>
+      <header class="header">
+        <div class="head__col">
+          <a href="index.html" class="back-btn">
+            <i class="fas fa-arrow-left fa"></i>
+          </a>
+
+          <h1 class="Chat__title">BF</h1>
+        </div>
+        <div>
+          <span class="head__col__icon">
+            <i class="fas fa-search"></i>
+          </span>
+          <span class="head_col__icon">
+            <i class="fas fa-bars"></i>
+          </span>
+        </div>
+      </header>
     </div>
-    <header class="head1">
-      <div class="head__col">
-        <a href="index.html" class="back-btn">
-          <i class="fas fa-arrow-left fa-3x"></i>
-        </a>
 
-        <h1 class="Chat__title">BF</h1>
-      </div>
-
-      <div class="head__col">
-        <i class="fas fa-search"></i>
-      </div>
-      <div class="head_col">
-        <i class="fas fa-bars"></i>
-      </div>
-    </header>
-    <main>
+    <main class="chat">
       <ul class="chat_list">
+        <span class="timestamp2">Feb,Thursday,13:58</span>
         <li class="chat_incoming">
-          <img src="avartar.png" alt="" class="g-avartar" />
-          <div class="chat_incoming__com">
+          <img src="avartar.png" alt="" class="g-avartar friend_avartar" />
+          <div class="chat_incoming__com ff">
             <span class="incoming_prof">Daniel</span>
-            <div class="chat_incoming__com">
-              <span class="incoming_msg">Hi dood</span>
-            </div>
+
+            <span class="incoming_msg">Hi dood</span>
           </div>
+
           <span class="timestamp">13:54</span>
         </li>
       </ul>
-      <ul class="chat_list">
-        <li class="chat_incoming">
-          <span class="timestamp">13:59</span>
-
-          <div class="chat_incoming__com">
+      <ul class="chat_list2">
+        <li class="chat_uncoming">
+          <div>
+            <span class="timestamps">13:59</span>
+          </div>
+          <div class="chat_uncoming__com">
             <span class="incoming_msg">yeah nice to meet you</span>
           </div>
         </li>
       </ul>
     </main>
-    <div class="chat_writing">
-      <div class="chat_writing_col">
+    <div class="chat_writing__container">
+      <input type="text" class="chat_writing" placeholder="Send message" />
+      <div class="chat_writing_left crs">
         <span class="icon"><i class="fas fa-plus"></i></span>
       </div>
-      <div class="chat_writing_col">
-        <input type="text" placeholder="Send message" />
-      </div>
-      <div class="chat_writing_col">
+
+      <div class="chat_writing_right crs">
         <span class="icon"><i class="far fa-smile-wink"></i></span>
         <span class="icon"><i class="fas fa-microphone"></i></span>
       </div>

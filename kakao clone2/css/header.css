@@ -1,0 +1,22 @@
+.header {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.header .Chat__title {
+  font-size: 30px;
+  font-weight: 700;
+}
+.header .head1__col__icon {
+  margin-left: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.header .head__col {
+  display: flex;
+  align-items: center;
+}
+.header .back-btn {
+  font-size: 20px;
+  margin-right: 10px;
+}

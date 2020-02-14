@@ -1,0 +1,158 @@
+.head_wrapper {
+  margin: 0px 0px;
+  background-color: white;
+  padding: 5px 0px;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 2;
+}
+
+.chatsbody {
+  padding: 10px 0px;
+  padding-top: 200px;
+  background-color: antiquewhite;
+  min-height: 1000vh;
+}
+.chatsbody .header,
+.chatsbody .status-bar {
+  padding: 0px 20px;
+}
+@keyframes float {
+  0% {
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+      0 18px 36px -18px rgba(0, 0, 0, 0.3),
+      0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  }
+  50% {
+    box-shadow: 0 30px 60px -60px rgba(50, 50, 93, 0.25),
+      0 18px 36px -18px rgba(0, 0, 0, 0.3),
+      0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  }
+  100% {
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+      0 18px 36px -18px rgba(0, 0, 0, 0.3),
+      0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  }
+}
+.chat_writing__container {
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.chat_writing {
+  bottom: 0px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 0;
+  border: none;
+  padding: 20px 80px;
+  font-size: 18px;
+  transition: width 1s ease-in-out, border-radius 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out, transform 1s ease-in-out;
+}
+.chat_writing:focus {
+  outline: none;
+  width: 80%;
+  border-radius: 40px;
+  transform: translateY(-100px);
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+    0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  animation: float 2s linear infinite forwards;
+}
+.chat_writing:focus ~ .crs {
+  opacity: 0;
+}
+.crs {
+  transition: opacity 0.3s ease-in-out;
+}
+.chat_writing__container i {
+  font-size: 18px;
+}
+
+.chat_writing_col:nth-child(2) {
+  width: 80%;
+}
+.chat_writing__container .chat_writing_left {
+  position: absolute;
+  left: 5px;
+}
+.chat_writing__container .chat_writing_right {
+  position: absolute;
+  right: 10px;
+}
+.chat_writing_col .input:focus {
+  outline: none;
+}
+
+.chat .chat_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.chat_list .timestamp2 {
+  background-color: white;
+  font-size: 12px;
+  padding: 5px 10px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border-radius: 20%;
+  box-shadow: 0px 8px 20px rgb(0, 0, 0, 0.2);
+}
+.chat_list .chat_incoming {
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-start;
+  align-items: center;
+}
+.chat_incoming .chat_incoming__com {
+  display: flex;
+  flex-direction: column;
+}
+.chat_incoming .timestamp {
+  position: absolute;
+  right: 10px;
+}
+.chat .chat_list2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.chat_list2 .chat_uncoming {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-self: flex-end;
+  align-items: center;
+}
+.chat_incoming {
+  animation: income 0.5s ease-in forwards;
+}
+.chat_uncoming {
+  animation: uncome 0.5s ease-in forwards;
+}
+@keyframes income {
+  from {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes uncome {
+  from {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

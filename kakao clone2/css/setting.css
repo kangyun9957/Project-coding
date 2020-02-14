@@ -1,0 +1,30 @@
+.setting {
+  margin-top: 40px;
+  display: flex;
+  border-bottom: 1px solid #f7f7f7;
+  justify-content: space-between;
+}
+.setting .head__col {
+  display: flex;
+  align-items: center;
+}
+.setting .Chat__title {
+  font-size: 40px;
+  font-weight: 600;
+  margin-left: 30px;
+}
+.settings {
+  margin-top: 40px;
+}
+.settings .set__list_col {
+  padding: 10px;
+  display: flex;
+  font-size: 30px;
+
+  border-bottom: 1px solid #f7f7f7;
+  border-top: 1px solid #f7f7f7;
+}
+.settings .setting__icon {
+  margin-left: 20px;
+  margin-right: 20px;
+}
