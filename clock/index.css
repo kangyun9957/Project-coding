@@ -6,7 +6,7 @@ body {
   cursor: pointer;
 }
 body {
-  color: #34495e;
+  color: white;
 }
 
 .clicked {
@@ -28,4 +28,26 @@ body {
   to {
     opacity: 1;
   }
+}
+.js-clock .clocks {
+  font-size: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bgimage {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+.js-greetings {
+  font-size: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
