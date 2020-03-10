@@ -1,0 +1,15 @@
+header.header
+    .header_colum
+    a(href=routers.home)
+        i.fab.fa-youtube
+    .header_colum
+        form.searching(action=routers.search,method="get")
+            input(type="text" placeholder = "Searching by term" name ="term" )
+    .header_colum
+        ul.header_list
+            li
+                a(href=routers.join) join
+            li
+                a(href=routers.login) log in
+
+

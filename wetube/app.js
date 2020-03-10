@@ -8,17 +8,18 @@ import globalRouter from "./router/globalRouter"
 import userRouter from "./router/userRouter"
 import videoRouter from "./router/videoRouter"
 import routers from "./routers"
+import { LocalMiddleWares } from "./middlewares";
 const app = express();
-
-
+app.use(helmet());
+app.set("view engine" , "pug");
 app.use(cookie());
 app.use(body.json());
 app.use(body.urlencoded({extended : true}));
 app.use(morgan("combined"));
-app.use(helmet());
-app.use(routers.home,globalRouter);
+app.use(LocalMiddleWares);
 app.use(routers.user, userRouter);
-app.use(routers.video,videoRouter);
+app.use(routers.home,globalRouter);
 
+app.use(routers.video , videoRouter)
 
 export default app;

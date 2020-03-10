@@ -14,10 +14,12 @@ const Upload = "/upload";
 const Edit_video = "/:id/edit";
 const Delete_video ="/:id/delete";
 const Video_detail = "/:id/detail";
+const Search = "/search";
 
 const routers = {
 
     home : Home,
+    search : Search,
     login : Login,
     logout : Logout,
     join : Join,
