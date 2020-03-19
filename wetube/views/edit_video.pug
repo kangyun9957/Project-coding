@@ -1,4 +1,9 @@
 extends layouts/main
 
 block content
-    h1 hello
+    .form_container
+        form(action=`/video${routers.edit_video}`,method="post")
+            input(type="text" ,name="title" , placeholder="Title")
+            textarea(name="description", placeholder="Description")
+            input(type="submit" , value = "Update video")
+        a.form_container__link(href=`/video${routers.delete_video}`) Delete Video

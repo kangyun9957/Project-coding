@@ -2,3 +2,12 @@ extends layouts/main
 
 block content
     h1 Searching By #{SearchingBy}
+    .Video
+         each item in videos
+            +VideoBlock(
+                {
+                    title:item.title,
+                    views:item.views,
+                    videoFile:item.videoFile
+                }
+            )

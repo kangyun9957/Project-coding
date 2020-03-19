@@ -1,4 +1,11 @@
 extends layouts/main
 
 block content
-    h1 hello
+    .form_container
+        form(action=`/user${routers.edit_profile}` method = "post")
+            label(for="avatar") Avatar
+            input(type="file" id="avatar" name="avatar")
+            input(type="text" placeholder = "name" name="name")
+            input(type="text" placeholder = "email" name="email")
+            input(type ="submit" placeholder ="Update profile")
+        a.form_container__link(href=`/user${routers.edit_password}`) Change Password
