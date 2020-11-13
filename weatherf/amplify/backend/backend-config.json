@@ -1,0 +1,32 @@
+{
+	"auth": {
+		"weatherf11f023de": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
+		}
+	},
+	"api": {
+		"weatherf": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"authConfig": {
+					"additionalAuthenticationProviders": [],
+					"defaultAuthentication": {
+						"authenticationType": "AMAZON_COGNITO_USER_POOLS",
+						"userPoolConfig": {
+							"userPoolId": "authweatherf11f023de"
+						}
+					}
+				}
+			}
+		}
+	},
+	"storage": {
+		"kauweatherlike": {
+			"service": "S3",
+			"providerPlugin": "awscloudformation"
+		}
+	}
+}

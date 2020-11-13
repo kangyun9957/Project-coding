@@ -1,0 +1,20 @@
+{
+    "android": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-weatherf-android-00239-authRole",
+            "UnauthRoleArn": "arn:aws:iam::782070741417:role/amplify-weatherf-android-00239-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::782070741417:role/amplify-weatherf-android-00239-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-weatherf-android-00239-deployment",
+            "UnauthRoleName": "amplify-weatherf-android-00239-unauthRole",
+            "StackName": "amplify-weatherf-android-00239",
+            "StackId": "arn:aws:cloudformation:us-east-1:782070741417:stack/amplify-weatherf-android-00239/fb462a40-8c85-11ea-a73f-12dc156c2e93",
+            "AmplifyAppId": "d254ryiyseknjp"
+        },
+        "categories": {
+            "auth": {
+                "weatherf11f023de": {}
+            }
+        }
+    }
+}

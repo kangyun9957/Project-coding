@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".New_Main2Activity">
+
+    <FrameLayout
+        android:id="@+id/Frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/List_name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/List_name"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Frame_layout">
+
+        <ImageButton
+            android:id="@+id/BottomList_Diet_d"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/diet"
+            android:background="@drawable/bottomlist_shape"
+            android:textSize="27sp" />
+
+        <ImageButton
+            android:id="@+id/BottomList_Planner_d"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:src="@drawable/date"
+            android:background="@drawable/bottomlist_shape"
+            android:textSize="27sp" />
+
+        <ImageButton
+            android:id="@+id/BottomList_Chat_d"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:src="@drawable/chat"
+            android:background="@drawable/bottomlist_shape"
+            android:textSize="27sp" />
+
+        <ImageButton
+            android:id="@+id/BottomList_Member_d"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:src="@drawable/people"
+            android:background="@drawable/bottomlist_shape"
+            android:textSize="27sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
